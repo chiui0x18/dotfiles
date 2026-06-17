@@ -104,11 +104,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
 " Language Server Protocol plugins
 " supported commands see https://github.com/prabirshrestha/vim-lsp#supported-commands
-Plug 'prabirshrestha/vim-lsp', { 'for': ['rust', 'go', 'c', 'python'] }
-Plug 'mattn/vim-lsp-settings', { 'for': ['rust', 'go', 'c', 'python'] }
+Plug 'prabirshrestha/vim-lsp', { 'for': ['rust', 'go', 'c', 'python', 'typescript'] }
+Plug 'mattn/vim-lsp-settings', { 'for': ['rust', 'go', 'c', 'python', 'typescript'] }
 " auto-completion on edit
-Plug 'prabirshrestha/asyncomplete.vim', { 'for': ['rust', 'go', 'c', 'python'] }
-Plug 'prabirshrestha/asyncomplete-lsp.vim', { 'for': ['rust', 'go', 'c', 'python'] }
+Plug 'prabirshrestha/asyncomplete.vim', { 'for': ['rust', 'go', 'c', 'python', 'typescript'] }
+Plug 'prabirshrestha/asyncomplete-lsp.vim', { 'for': ['rust', 'go', 'c', 'python', 'typescript'] }
 call plug#end()
 
 " ============== Productivity ==============

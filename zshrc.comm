@@ -42,7 +42,7 @@ alias vi=vim
 # have Git use the terminal vim from MacVim as default editor
 export GIT_EDITOR=vim
 
-## Alias for less typing
+## Alias for higher productivity
 ## conspicuous ls colorscheme — bold cyan dirs, bold red executables, bold magenta symlinks
 ## GNU/Linux: `man dircolors`
 ## macOS BSD: `man ls` and look for `LSCOLORS`
@@ -56,6 +56,11 @@ fi
 alias l="ls -ahl --color=auto"
 alias g=git
 alias ~="cd $HOME"
+# (For linux) handy to pipe cmd output to system clipboard
+# More see https://askubuntu.com/a/184398
+if command -v xclip &>/dev/null; then
+    alias clip='xclip -i -selection clipboard'
+fi
 
 # have zsh give a sanity check before rm *
 setopt RM_STAR_WAIT
